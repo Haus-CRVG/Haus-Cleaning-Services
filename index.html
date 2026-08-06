@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haus Cleaning | Worcester, MA</title>
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Jost:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <a class="brand" href="#top">
+                <img src="images/logo.jpg" alt="Haus Cleaning logo">
+                <span>Haus Cleaning</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </nav>
+            <div style="display:flex;align-items:center;gap:14px;">
+                <div class="lang-switch" id="langSwitch">
+                    <button data-lang="en" class="active">EN</button>
+                    <button data-lang="pt">PT</button>
+                    <button data-lang="es">ES</button>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">&#9776;</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="top"></div>
+    <section class="hero">
+        <div class="wrap">
+            <img class="hero-logo" src="images/logo.jpg" alt="Haus Cleaning">
+            <h1 data-i18n="hero.title">Your <em>Home</em>, Our Care</h1>
+            <p class="sub" data-i18n="hero.sub">Detail-focused residential &amp; office cleaning for Worcester families
+                and businesses who want their space to feel truly cared for.</p>
+            <p class="loc" data-i18n="hero.loc">Worcester &amp; Surrounding Areas</p>
+            <div class="cta-row">
+                <a class="btn btn-primary" id="waHero" href="#" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M20.5 3.5a11 11 0 0 0-17 13.6L2 22l5.1-1.4A11 11 0 1 0 20.5 3.5z" />
+                        <path
+                            d="M8.5 8.7c.2-.6.6-.6 1-.6h.5c.2 0 .5 0 .7.5.2.6.7 1.8.7 1.9.1.1.1.3 0 .4-.1.2-.2.3-.3.5-.2.2-.3.3-.1.6.7 1.1 1.5 1.8 2.6 2.3.2.1.4.1.5-.1.2-.2.6-.7.8-.9.2-.2.3-.2.5-.1.6.3 1.7.8 2 1 .3.1.5.2.5.4 0 .2 0 1-.4 1.5-.4.6-1.9 1.1-2.6 1.1-.7 0-1.6-.1-3.7-1.4-2.6-1.6-4.1-4.2-4.3-4.5-.1-.2-1-1.3-1-2.6 0-1.2.6-1.8.8-2z" />
+                    </svg>
+                    <span data-i18n="hero.whatsapp">WhatsApp Us</span>
+                </a>
+                <a class="btn btn-ghost" href="mailto:hauscleaningservicesma@gmail.com">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <path d="m3 7 9 6 9-6" />
+                    </svg>
+                    <span data-i18n="hero.email">Email Us</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="wrap about-grid">
+            <div>
+                <p class="eyebrow" data-i18n="about.eyebrow">Who We Are</p>
+                <h2 data-i18n="about.title">Cleaning that feels like coming home</h2>
+                <p data-i18n="about.p1">Haus Cleaning was built on one idea: a clean home should feel like relief, not
+                    another chore. We treat every house and office like it's our own — careful with your belongings,
+                    thorough in the corners people usually skip.</p>
+                <p data-i18n="about.p2">Based in Worcester, MA, we work with families, landlords, and small businesses
+                    across the surrounding area, on a schedule that fits real life.</p>
+                <div class="about-stats">
+                    <div class="stat"><b>100%</b><span data-i18n="about.stat1">Satisfaction Focused</span></div>
+                    <div class="stat"><b>MA</b><span data-i18n="about.stat2">Worcester Based</span></div>
+                    <div class="stat"><b>4</b><span data-i18n="about.stat3">Core Services</span></div>
+                </div>
+            </div>
+            <div class="about-art">
+                <img src="images/logo.jpg" alt="Haus Cleaning brand mark">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="wrap">
+            <div class="section-head">
+                <p class="eyebrow" data-i18n="services.eyebrow">What We Offer</p>
+                <h2 data-i18n="services.title">Services built around your space</h2>
+                <p data-i18n="services.sub">Pick what you need — we'll take care of the rest.</p>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 11 12 4l9 7" />
+                            <path d="M5 10v10h14V10" />
+                        </svg></div>
+                    <h3 data-i18n="svc1.title">House Cleaning</h3>
+                    <p data-i18n="svc1.p">Regular or one-time cleaning that keeps every room fresh, dusted, and lived-in
+                        — the good way.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16v16H4z" />
+                            <path d="M4 9h16M9 4v16" />
+                        </svg></div>
+                    <h3 data-i18n="svc2.title">Deep Cleaning</h3>
+                    <p data-i18n="svc2.p">A top-to-bottom reset — baseboards, appliances, fixtures, grout — everything a
+                        regular clean skips.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 21V8l9-5 9 5v13" />
+                            <path d="M9 21v-6h6v6" />
+                        </svg></div>
+                    <h3 data-i18n="svc3.title">Move In / Move Out</h3>
+                    <p data-i18n="svc3.p">A spotless start or a clean handoff — perfect for tenants, landlords, and new
+                        homeowners.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="14" rx="1.5" />
+                            <path d="M9 21h6M12 18v3" />
+                        </svg></div>
+                    <h3 data-i18n="svc4.title">Office Cleaning</h3>
+                    <p data-i18n="svc4.p">Reliable, after-hours cleaning that keeps your workplace sharp for clients and
+                        staff alike.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="wrap">
+            <div class="section-head">
+                <p class="eyebrow" data-i18n="gallery.eyebrow">Real Results</p>
+                <h2 data-i18n="gallery.title">Before &amp; After</h2>
+                <p data-i18n="gallery.sub">Drag the slider to see the difference for yourself.</p>
+            </div>
+            <div class="compare-grid" id="compareGrid">
+                <!-- Preenchido automaticamente via gallery.json (ver script no final da página) -->
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="wrap contact-grid">
+            <div>
+                <p class="eyebrow" data-i18n="contact.eyebrow">Get In Touch</p>
+                <h2 data-i18n="contact.title">Let's clean something today</h2>
+                <p data-i18n="contact.sub">Send a message on WhatsApp, email us, or find us on Instagram — we usually
+                    reply the same day.</p>
+                <ul class="contact-list">
+                    <li>
+                        <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path d="M20.5 3.5a11 11 0 0 0-17 13.6L2 22l5.1-1.4A11 11 0 1 0 20.5 3.5z" />
+                            </svg></div>
+                        <a href="#" id="waList" target="_blank" rel="noopener">+1 (774) 707-9964</a>
+                    </li>
+                    <li>
+                        <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3" y="5" width="18" height="14" rx="2" />
+                                <path d="m3 7 9 6 9-6" />
+                            </svg></div>
+                        <a href="mailto:hauscleaningservicesma@gmail.com">hauscleaningservicesma@gmail.com</a>
+                    </li>
+                    <li>
+                        <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r="1" />
+                            </svg></div>
+                        <a href="https://instagram.com/hauscleaningservices" target="_blank"
+                            rel="noopener">@hauscleaningservices</a>
+                    </li>
+                    <li>
+                        <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path
+                                    d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z" />
+                            </svg></div>
+                        <span data-i18n="contact.area">Worcester &amp; Surrounding Areas</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-card">
+                <h3 data-i18n="contact.card.title">Ready for a free quote?</h3>
+                <p data-i18n="contact.card.sub">Tell us a bit about your space and we'll get back to you with pricing.
+                </p>
+                <a class="btn btn-primary" id="waCard" href="#" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M20.5 3.5a11 11 0 0 0-17 13.6L2 22l5.1-1.4A11 11 0 1 0 20.5 3.5z" />
+                    </svg>
+                    <span data-i18n="contact.card.wa">Message on WhatsApp</span>
+                </a>
+                <a class="btn btn-ghost" href="mailto:hauscleaningservicesma@gmail.com">
+                    <span data-i18n="contact.card.em">Send an Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span data-i18n="footer.text">&copy; 2026 Haus Cleaning · Worcester, MA</span>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                "nav.about": "About", "nav.services": "Services", "nav.gallery": "Gallery", "nav.contact": "Contact",
+                "hero.title": "Your <em>Home</em>, Our Care",
+                "hero.sub": "Detail-focused residential &amp; office cleaning for Worcester families and businesses who want their space to feel truly cared for.",
+                "hero.loc": "Worcester &amp; Surrounding Areas",
+                "hero.whatsapp": "WhatsApp Us", "hero.email": "Email Us",
+                "about.eyebrow": "Who We Are",
+                "about.title": "Cleaning that feels like coming home",
+                "about.p1": "Haus Cleaning was built on one idea: a clean home should feel like relief, not another chore. We treat every house and office like it's our own — careful with your belongings, thorough in the corners people usually skip.",
+                "about.p2": "Based in Worcester, MA, we work with families, landlords, and small businesses across the surrounding area, on a schedule that fits real life.",
+                "about.stat1": "Satisfaction Focused", "about.stat2": "Worcester Based", "about.stat3": "Core Services",
+                "services.eyebrow": "What We Offer", "services.title": "Services built around your space",
+                "services.sub": "Pick what you need — we'll take care of the rest.",
+                "svc1.title": "House Cleaning", "svc1.p": "Regular or one-time cleaning that keeps every room fresh, dusted, and lived-in — the good way.",
+                "svc2.title": "Deep Cleaning", "svc2.p": "A top-to-bottom reset — baseboards, appliances, fixtures, grout — everything a regular clean skips.",
+                "svc3.title": "Move In / Move Out", "svc3.p": "A spotless start or a clean handoff — perfect for tenants, landlords, and new homeowners.",
+                "svc4.title": "Office Cleaning", "svc4.p": "Reliable, after-hours cleaning that keeps your workplace sharp for clients and staff alike.",
+                "gallery.eyebrow": "Real Results", "gallery.title": "Before &amp; After", "gallery.sub": "Drag the slider to see the difference for yourself.",
+                "tag.before": "Before", "tag.after": "After",
+                "cap.floor": "Kitchen Floor", "cap.burner": "Stovetop Burner", "cap.filter": "Range Filter",
+                "cap.light": "Light Fixture", "cap.baseboard": "Baseboard &amp; Trim", "cap.oven": "Oven Interior",
+                "contact.eyebrow": "Get In Touch", "contact.title": "Let's clean something today",
+                "contact.sub": "Send a message on WhatsApp, email us, or find us on Instagram — we usually reply the same day.",
+                "contact.area": "Worcester &amp; Surrounding Areas",
+                "contact.card.title": "Ready for a free quote?", "contact.card.sub": "Tell us a bit about your space and we'll get back to you with pricing.",
+                "contact.card.wa": "Message on WhatsApp", "contact.card.em": "Send an Email",
+                "footer.text": "&copy; 2026 Haus Cleaning · Worcester, MA",
+                "wa.msg": "Hi! I'd like to get a quote for cleaning."
+            },
+            pt: {
+                "nav.about": "Sobre", "nav.services": "Serviços", "nav.gallery": "Galeria", "nav.contact": "Contato",
+                "hero.title": "Sua <em>Casa</em>, Nosso Cuidado",
+                "hero.sub": "Limpeza residencial e comercial com atenção aos detalhes, para famílias e empresas de Worcester que querem sentir o espaço realmente cuidado.",
+                "hero.loc": "Worcester e Região",
+                "hero.whatsapp": "Fale no WhatsApp", "hero.email": "Enviar E-mail",
+                "about.eyebrow": "Quem Somos",
+                "about.title": "Uma limpeza que parece chegar em casa",
+                "about.p1": "A Haus Cleaning nasceu de uma ideia simples: uma casa limpa deveria trazer alívio, não mais uma tarefa. Cuidamos de cada casa e escritório como se fosse nosso — com atenção aos seus pertences e cuidado nos cantos que costumam ser esquecidos.",
+                "about.p2": "Baseados em Worcester, MA, atendemos famílias, proprietários e pequenos negócios em toda a região, com horários que se encaixam na sua rotina.",
+                "about.stat1": "Foco na Satisfação", "about.stat2": "Sediados em Worcester", "about.stat3": "Serviços Principais",
+                "services.eyebrow": "O Que Oferecemos", "services.title": "Serviços feitos para o seu espaço",
+                "services.sub": "Escolha o que precisa — nós cuidamos do resto.",
+                "svc1.title": "Limpeza Residencial", "svc1.p": "Limpeza recorrente ou avulsa que mantém cada cômodo fresco, sem poeira e com cara de lar cuidado.",
+                "svc2.title": "Limpeza Profunda", "svc2.p": "Uma renovação completa — rodapés, eletrodomésticos, luminárias, rejuntes — tudo que a limpeza comum não alcança.",
+                "svc3.title": "Mudança (Entrada/Saída)", "svc3.p": "Um começo impecável ou uma entrega bem cuidada — ideal para inquilinos, proprietários e novos moradores.",
+                "svc4.title": "Limpeza de Escritório", "svc4.p": "Limpeza confiável, fora do horário comercial, para manter o ambiente impecável para clientes e equipe.",
+                "gallery.eyebrow": "Resultados Reais", "gallery.title": "Antes e Depois", "gallery.sub": "Arraste o controle para ver a diferença.",
+                "tag.before": "Antes", "tag.after": "Depois",
+                "cap.floor": "Piso da Cozinha", "cap.burner": "Boca do Fogão", "cap.filter": "Filtro do Exaustor",
+                "cap.light": "Luminária", "cap.baseboard": "Rodapé e Acabamento", "cap.oven": "Interior do Forno",
+                "contact.eyebrow": "Fale Conosco", "contact.title": "Vamos limpar algo hoje",
+                "contact.sub": "Mande uma mensagem no WhatsApp, envie um e-mail ou nos encontre no Instagram — costumamos responder no mesmo dia.",
+                "contact.area": "Worcester e Região",
+                "contact.card.title": "Pronto para um orçamento gratuito?", "contact.card.sub": "Conte um pouco sobre seu espaço e retornaremos com os valores.",
+                "contact.card.wa": "Chamar no WhatsApp", "contact.card.em": "Enviar E-mail",
+                "footer.text": "&copy; 2026 Haus Cleaning · Worcester, MA",
+                "wa.msg": "Olá! Gostaria de um orçamento de limpeza."
+            },
+            es: {
+                "nav.about": "Nosotros", "nav.services": "Servicios", "nav.gallery": "Galería", "nav.contact": "Contacto",
+                "hero.title": "Tu <em>Hogar</em>, Nuestro Cuidado",
+                "hero.sub": "Limpieza residencial y de oficinas con atención al detalle, para familias y negocios de Worcester que quieren sentir su espacio realmente cuidado.",
+                "hero.loc": "Worcester y Alrededores",
+                "hero.whatsapp": "Escríbenos por WhatsApp", "hero.email": "Enviar Correo",
+                "about.eyebrow": "Quiénes Somos",
+                "about.title": "Una limpieza que se siente como llegar a casa",
+                "about.p1": "Haus Cleaning nació de una idea simple: un hogar limpio debería sentirse como un alivio, no como otra tarea más. Tratamos cada casa y oficina como si fuera nuestra — cuidando tus pertenencias y siendo minuciosos en los rincones que casi siempre se pasan por alto.",
+                "about.p2": "Con base en Worcester, MA, trabajamos con familias, propietarios y pequeños negocios en toda la zona, con horarios que se adaptan a tu día a día.",
+                "about.stat1": "Enfocados en tu Satisfacción", "about.stat2": "Con Base en Worcester", "about.stat3": "Servicios Principales",
+                "services.eyebrow": "Lo Que Ofrecemos", "services.title": "Servicios pensados para tu espacio",
+                "services.sub": "Elige lo que necesitas — nosotros nos encargamos del resto.",
+                "svc1.title": "Limpieza Residencial", "svc1.p": "Limpieza regular o única que mantiene cada habitación fresca, sin polvo y con sensación de hogar cuidado.",
+                "svc2.title": "Limpieza Profunda", "svc2.p": "Una renovación completa — zócalos, electrodomésticos, luminarias, lechada — todo lo que una limpieza regular deja pasar.",
+                "svc3.title": "Mudanza (Entrada/Salida)", "svc3.p": "Un comienzo impecable o una entrega bien cuidada — ideal para inquilinos, propietarios y nuevos residentes.",
+                "svc4.title": "Limpieza de Oficinas", "svc4.p": "Limpieza confiable, fuera del horario laboral, que mantiene tu espacio impecable para clientes y empleados.",
+                "gallery.eyebrow": "Resultados Reales", "gallery.title": "Antes y Después", "gallery.sub": "Arrastra el control para ver la diferencia.",
+                "tag.before": "Antes", "tag.after": "Después",
+                "cap.floor": "Piso de la Cocina", "cap.burner": "Quemador de la Estufa", "cap.filter": "Filtro de la Campana",
+                "cap.light": "Lámpara", "cap.baseboard": "Zócalo y Molduras", "cap.oven": "Interior del Horno",
+                "contact.eyebrow": "Contáctanos", "contact.title": "Limpiemos algo hoy",
+                "contact.sub": "Envíanos un mensaje por WhatsApp, un correo, o encuéntranos en Instagram — normalmente respondemos el mismo día.",
+                "contact.area": "Worcester y Alrededores",
+                "contact.card.title": "¿Listo para una cotización gratis?", "contact.card.sub": "Cuéntanos un poco sobre tu espacio y te responderemos con los precios.",
+                "contact.card.wa": "Escribir por WhatsApp", "contact.card.em": "Enviar Correo",
+                "footer.text": "&copy; 2026 Haus Cleaning · Worcester, MA",
+                "wa.msg": "¡Hola! Me gustaría recibir una cotización de limpieza."
+            }
+        };
+
+        const WHATSAPP_NUMBER = "17747079964";
+        let currentLang = 'en';
+
+        function applyLang(lang) {
+            currentLang = lang;
+            const dict = translations[lang];
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key] !== undefined) { el.innerHTML = dict[key]; }
+            });
+            // Legendas dinâmicas da galeria (cada figcaption traz seu próprio objeto {en,pt,es})
+            document.querySelectorAll('figcaption[data-caption]').forEach(el => {
+                try {
+                    const caption = JSON.parse(el.getAttribute('data-caption'));
+                    el.textContent = caption[lang] || caption.en || '';
+                } catch (e) { /* ignora legendas malformadas */ }
+            });
+            document.documentElement.lang = lang;
+            document.querySelectorAll('#langSwitch button').forEach(b => {
+                b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+            });
+            const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(dict['wa.msg'])}`;
+            ['waHero', 'waList', 'waCard'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.href = waLink;
+            });
+        }
+
+        document.getElementById('langSwitch').addEventListener('click', (e) => {
+            const btn = e.target.closest('button[data-lang]');
+            if (!btn) return;
+            applyLang(btn.getAttribute('data-lang'));
+        });
+
+        document.getElementById('menuToggle').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+        document.querySelectorAll('.nav-links a').forEach(a => {
+            a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+        });
+
+        // ---- Galeria dinâmica (lê gallery.json; se não conseguir, usa a lista de reserva abaixo) ----
+        const FALLBACK_GALLERY = [
+            { "id": "floor", "before": "images/floor-before.jpg", "after": "images/floor-after.jpg", "caption": { "en": "Kitchen Floor", "pt": "Piso da Cozinha", "es": "Piso de la Cocina" } },
+            { "id": "burner", "before": "images/burner-before.jpg", "after": "images/burner-after.jpg", "caption": { "en": "Stovetop Burner", "pt": "Boca do Fogão", "es": "Quemador de la Estufa" } },
+            { "id": "filter", "before": "images/filter-before.jpg", "after": "images/filter-after.jpg", "caption": { "en": "Range Filter", "pt": "Filtro do Exaustor", "es": "Filtro de la Campana" } },
+            { "id": "light", "before": "images/light-before.jpg", "after": "images/light-after.jpg", "caption": { "en": "Light Fixture", "pt": "Luminária", "es": "Lámpara" } },
+            { "id": "baseboard", "before": "images/baseboard-before.jpg", "after": "images/baseboard-after.jpg", "caption": { "en": "Baseboard & Trim", "pt": "Rodapé e Acabamento", "es": "Zócalo y Molduras" } },
+            { "id": "oven", "before": "images/oven-before.jpg", "after": "images/oven-after.jpg", "caption": { "en": "Oven Interior", "pt": "Interior do Forno", "es": "Interior del Horno" } }
+        ];
+
+        const ARROWS_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M8 5 3 12l5 7M16 5l5 7-5 7"/></svg>';
+
+        function buildCompareCard(item) {
+            const figure = document.createElement('figure');
+            figure.className = 'compare-card';
+            figure.innerHTML = `
+    <div class="compare" data-id="${item.id}">
+      <img class="img-before" src="${item.before}" alt="${item.id} before cleaning">
+      <img class="img-after" src="${item.after}" alt="${item.id} after cleaning">
+      <span class="tag before" data-i18n="tag.before">Before</span>
+      <span class="tag after" data-i18n="tag.after">After</span>
+      <div class="handle"><div class="handle-grip">${ARROWS_SVG}</div></div>
+      <input type="range" min="0" max="100" value="50" aria-label="Reveal before and after">
+    </div>
+    <figcaption data-caption='${JSON.stringify(item.caption)}'></figcaption>
+  `;
+            return figure;
+        }
+
+        function initCompareSlider(card) {
+            const range = card.querySelector('input[type=range]');
+            const setReveal = (val) => card.style.setProperty('--reveal', val + '%');
+            setReveal(range.value);
+            range.addEventListener('input', () => setReveal(range.value));
+        }
+
+        function renderGallery(items) {
+            const grid = document.getElementById('compareGrid');
+            grid.innerHTML = '';
+            items.forEach(item => {
+                const figure = buildCompareCard(item);
+                grid.appendChild(figure);
+                initCompareSlider(figure.querySelector('.compare'));
+            });
+            applyLang(currentLang); // aplica traduções (incl. legendas) nos cards recém-criados
+        }
+
+        fetch('gallery.json')
+            .then(res => { if (!res.ok) throw new Error('no json'); return res.json(); })
+            .then(data => renderGallery(data))
+            .catch(() => renderGallery(FALLBACK_GALLERY));
+
+        applyLang('en');
+    </script>
+</body>
+
+</html>

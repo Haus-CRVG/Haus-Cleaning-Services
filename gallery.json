@@ -1,0 +1,38 @@
+[
+  {
+    "id": "floor",
+    "before": "images/floor-before.jpg",
+    "after": "images/floor-after.jpg",
+    "caption": { "en": "Kitchen Floor", "pt": "Piso da Cozinha", "es": "Piso de la Cocina" }
+  },
+  {
+    "id": "burner",
+    "before": "images/burner-before.jpg",
+    "after": "images/burner-after.jpg",
+    "caption": { "en": "Stovetop Burner", "pt": "Boca do Fogão", "es": "Quemador de la Estufa" }
+  },
+  {
+    "id": "filter",
+    "before": "images/filter-before.jpg",
+    "after": "images/filter-after.jpg",
+    "caption": { "en": "Range Filter", "pt": "Filtro do Exaustor", "es": "Filtro de la Campana" }
+  },
+  {
+    "id": "light",
+    "before": "images/light-before.jpg",
+    "after": "images/light-after.jpg",
+    "caption": { "en": "Light Fixture", "pt": "Luminária", "es": "Lámpara" }
+  },
+  {
+    "id": "baseboard",
+    "before": "images/baseboard-before.jpg",
+    "after": "images/baseboard-after.jpg",
+    "caption": { "en": "Baseboard & Trim", "pt": "Rodapé e Acabamento", "es": "Zócalo y Molduras" }
+  },
+  {
+    "id": "oven",
+    "before": "images/oven-before.jpg",
+    "after": "images/oven-after.jpg",
+    "caption": { "en": "Oven Interior", "pt": "Interior do Forno", "es": "Interior del Horno" }
+  }
+]
