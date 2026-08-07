@@ -49,11 +49,11 @@
   }
   .nav{
     display:flex;align-items:center;justify-content:space-between;
-    padding:9px 28px;max-width:1140px;margin:0 auto;
+    padding:12px 28px;max-width:1140px;margin:0 auto;
   }
-  .brand{display:flex;align-items:center;gap:9px;text-decoration:none;}
-  .brand img{height:30px;width:auto;border-radius:6px;}
-  .brand span{font-family:'Jost',sans-serif;font-weight:600;font-size:.98rem;color:var(--teal-2);letter-spacing:.02em;}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{height:46px;width:auto;}
+  .brand span{font-family:'Fraunces',serif;font-weight:500;font-size:1.35rem;color:var(--teal-2);letter-spacing:.01em;}
   .nav-links{display:flex;gap:28px;align-items:center;}
   .nav-links a{
     text-decoration:none;font-size:.78rem;letter-spacing:.06em;
@@ -91,16 +91,16 @@
   /* ---------- HERO ---------- */
   .hero{
     position:relative;
-    padding:48px 28px 64px;
+    padding:34px 28px 52px;
     text-align:center;
     overflow:hidden;
     background:
       radial-gradient(circle at 18% 12%, rgba(198,152,89,0.14), transparent 45%),
       radial-gradient(circle at 85% 88%, rgba(30,69,63,0.10), transparent 45%);
   }
-  .hero-logo{width:96px;margin:0 auto 16px;}
+  .hero-logo{width:78px;margin:0 auto 14px;}
   .hero h1{
-    font-size:clamp(1.8rem,4.2vw,2.9rem);
+    font-size:clamp(1.7rem,4vw,2.7rem);
     max-width:780px;margin:0 auto;
     line-height:1.15;
   }
@@ -122,6 +122,7 @@
     font-family:'Jost',sans-serif;font-size:.92rem;font-weight:600;letter-spacing:.03em;
     transition:transform .2s ease, box-shadow .2s ease;
     border:1.5px solid transparent;
+    cursor:pointer;
   }
   .btn:hover{transform:translateY(-2px);}
   .btn-primary{background:var(--teal-2);color:var(--cream);box-shadow:var(--shadow);}
@@ -237,7 +238,7 @@
   .contact-grid p{color:rgba(247,241,227,0.78);}
   .contact-list{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-direction:column;gap:18px;}
   .contact-list li{display:flex;align-items:center;gap:14px;}
-  .contact-list a{text-decoration:none;color:var(--cream);font-size:1rem;}
+  .contact-list a{text-decoration:none;color:var(--cream);font-size:1rem;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit;}
   .contact-list a:hover{color:var(--gold);}
   .c-icon{
     width:42px;height:42px;border-radius:50%;background:rgba(247,241,227,0.1);
@@ -260,4 +261,74 @@
   footer{
     background:var(--teal-2);border-top:1px solid rgba(247,241,227,0.14);
     padding:22px 28px;text-align:center;color:rgba(247,241,227,0.55);font-size:.8rem;
+  }
+
+  /* ---------- EMAIL MODAL ---------- */
+  .modal-overlay{
+    position:fixed;inset:0;z-index:1000;
+    background:rgba(18,48,40,0.55);
+    display:none;align-items:center;justify-content:center;
+    padding:24px;
+  }
+  .modal-overlay.open{display:flex;}
+  .email-modal{
+    position:relative;
+    background:var(--white);
+    border-radius:var(--radius);
+    padding:38px;
+    width:100%;max-width:640px;
+    max-height:88vh;overflow-y:auto;
+    box-shadow:0 30px 70px rgba(18,48,40,0.35);
+  }
+  .email-modal h2{font-size:1.5rem;margin-top:8px;}
+  .modal-close{
+    position:absolute;top:16px;right:16px;
+    width:36px;height:36px;border-radius:50%;
+    background:var(--cream-2);border:none;
+    font-size:1.5rem;line-height:1;color:var(--teal-2);
+    cursor:pointer;display:flex;align-items:center;justify-content:center;
+    transition:background .2s ease;
+  }
+  .modal-close:hover{background:var(--cream);}
+  .form-intro{color:#57564F;margin:12px 0 26px;font-size:.94rem;}
+
+  .form-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:22px;
+  }
+  .form-field{display:flex;flex-direction:column;gap:6px;}
+  .form-field.form-full{grid-column:1 / -1;}
+  .form-field label{
+    font-size:.76rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+    color:var(--teal-2);
+  }
+  .form-field input,
+  .form-field select,
+  .form-field textarea{
+    font-family:'Jost',sans-serif;font-size:.95rem;color:var(--ink);
+    border:1.5px solid var(--cream-2);border-radius:10px;
+    padding:11px 14px;background:var(--cream);
+    outline:none;transition:border-color .2s ease;
+    width:100%;
+  }
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus{border-color:var(--gold-2);}
+  .form-field textarea{resize:vertical;min-height:100px;}
+  .form-field input[type=file]{
+    background:var(--white);border-style:dashed;padding:14px;cursor:pointer;
+  }
+  .form-field small{font-size:.76rem;color:#8A8880;}
+  .form-submit{width:100%;justify-content:center;}
+  .form-message{
+    display:none;margin-top:18px;padding:14px 16px;border-radius:12px;
+    font-size:.88rem;line-height:1.5;
+  }
+  .form-message.show{display:block;}
+  .form-success{background:#EAF4EC;color:#1E4A2A;border:1px solid #BFE2C7;}
+  .form-error{background:#FBEAEA;color:#7A2222;border:1px solid #F2C6C6;}
+  .form-message strong{display:block;margin-bottom:2px;}
+
+  @media (max-width:620px){
+    .form-grid{grid-template-columns:1fr;}
+    .email-modal{padding:26px 22px;}
   }
