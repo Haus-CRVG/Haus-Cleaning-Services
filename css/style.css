@@ -49,11 +49,11 @@
   }
   .nav{
     display:flex;align-items:center;justify-content:space-between;
-    padding:12px 28px;max-width:1140px;margin:0 auto;
+    padding:12px 40px;max-width:1400px;margin:0 auto;
   }
-  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
-  .brand img{height:46px;width:auto;}
-  .brand span{font-family:'Fraunces',serif;font-weight:500;font-size:1.35rem;color:var(--teal-2);letter-spacing:.01em;}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
+  .brand img{height:24px;width:auto;}
+  .brand span{font-family:'Fraunces',serif;font-weight:500;font-size:1.4rem;color:var(--teal-2);letter-spacing:.01em;}
   .nav-links{display:flex;gap:28px;align-items:center;}
   .nav-links a{
     text-decoration:none;font-size:.78rem;letter-spacing:.06em;
@@ -98,7 +98,7 @@
       radial-gradient(circle at 18% 12%, rgba(198,152,89,0.14), transparent 45%),
       radial-gradient(circle at 85% 88%, rgba(30,69,63,0.10), transparent 45%);
   }
-  .hero-logo{width:78px;margin:0 auto 14px;}
+  .hero-logo{width:160px;margin:0 auto 14px;}
   .hero h1{
     font-size:clamp(1.7rem,4vw,2.7rem);
     max-width:780px;margin:0 auto;
