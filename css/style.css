@@ -173,7 +173,7 @@
   .stat b{display:block;font-family:'Fraunces',serif;font-size:1.9rem;color:var(--teal-2);}
   .stat span{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-2);}
   .about-art{
-    background:var(--cream-2);border-radius:var(--radius);padding:36px;
+    background:var(--cream);border-radius:var(--radius);padding:36px;
     display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;
   }
   .about-art img{width:70%;}
