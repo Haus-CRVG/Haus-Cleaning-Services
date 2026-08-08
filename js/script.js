@@ -63,6 +63,7 @@ const translations = {
         "form.eyebrow": "Get In Touch",
         "form.title": "Send us a message",
         "form.sub": "Tell us a little about what you need and we'll get back to you.",
+        "form.photoNote": "Need to send a photo of the area? <a href=\"#\" id=\"formWhatsappLink\" target=\"_blank\" rel=\"noopener\">Send it to us on WhatsApp</a> instead.",
         "form.name": "Name",
         "form.email": "Email",
         "form.phone": "Phone",
@@ -76,8 +77,6 @@ const translations = {
         "form.office": "Office Cleaning",
         "form.other": "Other",
         "form.message": "Message",
-        "form.attachment": "Attach a photo (optional)",
-        "form.attachmentHelp": "You can attach a photo of the area you'd like us to clean.",
         "form.send": "Send Message",
         "form.sending": "Sending...",
         "form.successTitle": "Thank you!",
@@ -145,6 +144,7 @@ const translations = {
         "form.eyebrow": "Fale Conosco",
         "form.title": "Envie uma mensagem",
         "form.sub": "Conte um pouco sobre o que você precisa e entraremos em contato.",
+        "form.photoNote": "Precisa mandar uma foto do local? <a href=\"#\" id=\"formWhatsappLink\" target=\"_blank\" rel=\"noopener\">Envie pelo WhatsApp</a>.",
         "form.name": "Nome",
         "form.email": "E-mail",
         "form.phone": "Telefone",
@@ -158,8 +158,6 @@ const translations = {
         "form.office": "Limpeza de Escritório",
         "form.other": "Outro",
         "form.message": "Mensagem",
-        "form.attachment": "Anexar uma foto (opcional)",
-        "form.attachmentHelp": "Você pode anexar uma foto do local que gostaria que limpássemos.",
         "form.send": "Enviar Mensagem",
         "form.sending": "Enviando...",
         "form.successTitle": "Obrigado!",
@@ -227,6 +225,7 @@ const translations = {
         "form.eyebrow": "Contáctanos",
         "form.title": "Envíanos un mensaje",
         "form.sub": "Cuéntanos un poco sobre lo que necesitas y nos pondremos en contacto contigo.",
+        "form.photoNote": "¿Necesitas enviar una foto del área? <a href=\"#\" id=\"formWhatsappLink\" target=\"_blank\" rel=\"noopener\">Envíala por WhatsApp</a>.",
         "form.name": "Nombre",
         "form.email": "Correo electrónico",
         "form.phone": "Teléfono",
@@ -240,8 +239,6 @@ const translations = {
         "form.office": "Limpieza de Oficinas",
         "form.other": "Otro",
         "form.message": "Mensaje",
-        "form.attachment": "Adjuntar una foto (opcional)",
-        "form.attachmentHelp": "Puedes adjuntar una foto del área que te gustaría que limpiemos.",
         "form.send": "Enviar Mensaje",
         "form.sending": "Enviando...",
         "form.successTitle": "¡Gracias!",
@@ -294,6 +291,9 @@ function applyLang(lang) {
         const el = document.getElementById(id);
         if (el) el.href = waLink;
     });
+    // Link dentro da notinha do formulário (é recriado a cada troca de idioma, então buscamos de novo)
+    const formWaLink = document.getElementById("formWhatsappLink");
+    if (formWaLink) formWaLink.href = waLink;
 }
 
 /* =========================================================
