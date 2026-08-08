@@ -15,6 +15,7 @@ const translations = {
         "hero.loc": "Worcester &amp; Surrounding Areas",
         "hero.whatsapp": "WhatsApp Us",
         "hero.email": "Email Us",
+        "hero.sms": "Text Us",
 
         "about.eyebrow": "Who We Are",
         "about.title": "Cleaning that feels like coming home",
@@ -56,6 +57,8 @@ const translations = {
         "contact.card.sub": "Tell us a bit about your space and we'll get back to you with pricing.",
         "contact.card.wa": "Message on WhatsApp",
         "contact.card.em": "Send an Email",
+        "contact.card.sms": "Send a Text",
+        "contact.textLabel": "Text/SMS:",
 
         "footer.text": "&copy; 2026 Haus Cleaning · Worcester, MA",
         "wa.msg": "Hi! I'd like to get a quote for cleaning.",
@@ -96,6 +99,7 @@ const translations = {
         "hero.loc": "Worcester e Região",
         "hero.whatsapp": "Fale no WhatsApp",
         "hero.email": "Enviar E-mail",
+        "hero.sms": "Mandar SMS",
 
         "about.eyebrow": "Quem Somos",
         "about.title": "Uma limpeza que parece chegar em casa",
@@ -137,6 +141,8 @@ const translations = {
         "contact.card.sub": "Conte um pouco sobre seu espaço e retornaremos com os valores.",
         "contact.card.wa": "Chamar no WhatsApp",
         "contact.card.em": "Enviar E-mail",
+        "contact.card.sms": "Mandar SMS",
+        "contact.textLabel": "SMS/Texto:",
 
         "footer.text": "&copy; 2026 Haus Cleaning · Worcester, MA",
         "wa.msg": "Olá! Gostaria de um orçamento de limpeza.",
@@ -177,6 +183,7 @@ const translations = {
         "hero.loc": "Worcester y Alrededores",
         "hero.whatsapp": "Escríbenos por WhatsApp",
         "hero.email": "Enviar Correo",
+        "hero.sms": "Enviar SMS",
 
         "about.eyebrow": "Quiénes Somos",
         "about.title": "Una limpieza que se siente como llegar a casa",
@@ -218,6 +225,8 @@ const translations = {
         "contact.card.sub": "Cuéntanos un poco sobre tu espacio y te responderemos con los precios.",
         "contact.card.wa": "Escribir por WhatsApp",
         "contact.card.em": "Enviar Correo",
+        "contact.card.sms": "Enviar SMS",
+        "contact.textLabel": "SMS/Texto:",
 
         "footer.text": "&copy; 2026 Haus Cleaning · Worcester, MA",
         "wa.msg": "¡Hola! Me gustaría recibir una cotización de limpieza.",
@@ -294,6 +303,13 @@ function applyLang(lang) {
     // Link dentro da notinha do formulário (é recriado a cada troca de idioma, então buscamos de novo)
     const formWaLink = document.getElementById("formWhatsappLink");
     if (formWaLink) formWaLink.href = waLink;
+
+    /* SMS / Text (abre o app de mensagens nativo do celular) */
+    const smsLink = `sms:+${WHATSAPP_NUMBER}?body=${encodeURIComponent(dict["wa.msg"])}`;
+    ["smsHero", "smsList", "smsCard"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.href = smsLink;
+    });
 }
 
 /* =========================================================
